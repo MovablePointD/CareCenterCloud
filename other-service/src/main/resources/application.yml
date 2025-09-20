@@ -22,7 +22,7 @@ spring:
     username: root
     password: root
     hikari:
-      maximum-pool-size: 17
+      maximum-pool-size: 100
       minimum-idle: 8
       servlet:
         multipart:

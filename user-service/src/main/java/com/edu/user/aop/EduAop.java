@@ -1,6 +1,6 @@
-package com.edu.aop;
+package com.edu.user.aop;
 
-import com.edu.service.MailService;
+import com.edu.user.service.MailService;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;

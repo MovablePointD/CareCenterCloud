@@ -1,8 +1,8 @@
-package com.edu.controller;
+package com.edu.user.controller;
 
 
-import com.edu.service.CodeService;
-import com.edu.service.MailService;
+import com.edu.user.service.CodeService;
+import com.edu.user.service.MailService;
 import com.edu.common.vo.ResultVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

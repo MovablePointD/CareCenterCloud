@@ -20,7 +20,7 @@ spring:
         - id: bedroom-service
           uri: lb://bedroom-service
           predicates:
-            - Path=/bedroom/**
+            - Path=/bedroom/**, /outin/**
 
         - id: user-service
           uri: lb://user-service

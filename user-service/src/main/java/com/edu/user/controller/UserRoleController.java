@@ -3,8 +3,9 @@ package com.edu.user.controller;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.edu.common.entity.Role;
 import com.edu.common.entity.User;
-import com.edu.user.client.RoleCilent;
+
 //import com.edu.user.service.RoleService;
+import com.edu.user.client.RoleClient;
 import com.edu.user.service.UserRoleService;
 import com.edu.user.service.UserService;
 import com.edu.common.vo.ResultVo;
@@ -28,7 +29,7 @@ public class UserRoleController {
     UserService userService;
     @Resource
 //    RoleService roleService;
-    RoleCilent roleService;
+    RoleClient roleService;
     @Resource
     UserRoleService userRoleService;
     @GetMapping("/getUser")

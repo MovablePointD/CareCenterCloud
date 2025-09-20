@@ -1,4 +1,4 @@
-package com.edu.service;
+package com.edu.user.service;
 
 import javax.mail.MessagingException;
 

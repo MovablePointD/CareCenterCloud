@@ -57,10 +57,10 @@ public  ResultVo<Page<Temp>>list(Integer id, Integer pageNo, Integer pageSize) t
 }
 
 
-@PostMapping("/save")
-ResultVo<Boolean> add(long lid, long cid, Integer executecycle,  Integer executenub,  Integer sort, String memo) throws InterruptedException, ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
-    return ResultVo.success(lccontrastService.add(lid, cid, executecycle, executenub, sort, memo), "添加护理内容成功") ;
-}
+    @PostMapping("/save")
+    ResultVo<Boolean> add(long lid, long cid, Integer executecycle,  Integer executenub,  Integer sort, String memo) throws InterruptedException, ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+        return ResultVo.success(lccontrastService.add(lid, cid, executecycle, executenub, sort, memo), "添加护理内容成功") ;
+    }
     @GetMapping("/lccontent")
     ResultVo<Nursecontent> getContentName(Integer id) {
 

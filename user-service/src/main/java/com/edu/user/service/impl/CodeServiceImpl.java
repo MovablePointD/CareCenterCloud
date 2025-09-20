@@ -1,6 +1,6 @@
-package com.edu.service.impl;
+package com.edu.user.service.impl;
 
-import com.edu.service.CodeService;
+import com.edu.user.service.CodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;

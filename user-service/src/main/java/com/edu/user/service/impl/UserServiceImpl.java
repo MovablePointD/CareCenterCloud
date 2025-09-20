@@ -6,7 +6,7 @@ import com.edu.common.entity.SysResource;
 import com.edu.common.entity.User;
 import com.edu.user.mapper.UserMapper;
 //import com.edu.service.SysResourceService;
-import com.edu.user.client.SysResourceCilent;
+import com.edu.user.client.SysResourceClient;
 import com.edu.user.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.edu.common.util.JwtUtil;
@@ -34,7 +34,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     PasswordEncoder passwordEncoder;
     @Resource
 //    SysResourceService sysResourceService;
-    SysResourceCilent sysResourceCilent;
+    SysResourceClient sysResourceCilent;
     @Resource(name = "vredis")
     RedisTemplate<String, Object> redisTemplate;
     @Override

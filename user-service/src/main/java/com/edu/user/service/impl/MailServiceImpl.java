@@ -1,6 +1,6 @@
-package com.edu.service.impl;
+package com.edu.user.service.impl;
 
-import com.edu.service.MailService;
+import com.edu.user.service.MailService;
 import jakarta.mail.internet.MimeMessage;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;

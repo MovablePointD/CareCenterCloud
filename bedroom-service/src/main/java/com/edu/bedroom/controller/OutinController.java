@@ -1,14 +1,15 @@
-package com.edu.outin.controller;
+package com.edu.bedroom.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.edu.bedroom.service.BedroomService;
 import com.edu.common.entity.Bedroom;
 import com.edu.common.entity.Outin;
 //import com.edu.service.BedroomService;
-import com.edu.outin.client.BedroomClient;
-import com.edu.outin.service.OutinService;
+//import com.edu.outin.client.BedroomClient;
+import com.edu.bedroom.service.OutinService;
 import com.edu.common.vo.ResultVo;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +29,8 @@ public class OutinController {
     @Resource
     OutinService outinService;
     @Resource
-//    BedroomService bedroomService;
-    BedroomClient bedroomService;
+    BedroomService bedroomService;
+//    BedroomClient bedroomService;
     @GetMapping("/list")
     ResultVo<IPage<Outin>> list(Integer pageNo, Integer pageSize, String name) {
         if (null != name)

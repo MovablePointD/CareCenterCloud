@@ -1,10 +1,10 @@
-package com.edu.outin.service.impl;
+package com.edu.bedroom.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.edu.common.entity.Outin;
-import com.edu.outin.mapper.OutinMapper;
-import com.edu.outin.service.OutinService;
+import com.edu.bedroom.mapper.OutinMapper;
+import com.edu.bedroom.service.OutinService;
 import org.springframework.stereotype.Service;
 
 /**

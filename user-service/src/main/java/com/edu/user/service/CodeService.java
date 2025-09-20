@@ -1,4 +1,4 @@
-package com.edu.service;
+package com.edu.user.service;
 
 public interface CodeService{
     void saveCode(String username, String code) ;// 保存验证码到Redis

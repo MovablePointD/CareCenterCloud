@@ -1,4 +1,4 @@
-package com.edu.outin.mapper;
+package com.edu.bedroom.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.edu.common.entity.Outin;

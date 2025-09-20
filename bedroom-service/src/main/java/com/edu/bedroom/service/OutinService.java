@@ -1,4 +1,4 @@
-package com.edu.outin.service;
+package com.edu.bedroom.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.edu.common.entity.Outin;
