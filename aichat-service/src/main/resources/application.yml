@@ -1,6 +1,6 @@
 dashscope:
   api:
-    key: sk-ee83b6a7922840019fa88682f0961553
+    key: # 输入你自己的DashScope API Key
 server:
   port: 8081
 

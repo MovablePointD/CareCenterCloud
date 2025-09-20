@@ -12,7 +12,7 @@ public class QwenService {
     private static final String DASHSCOPE_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation";
     private final OkHttpClient client = new OkHttpClient();
 
-    @Value("sk-ee83b6a7922840019fa88682f0961553")
+    @Value("${dashscope.api.key}")
     private String apiKey;
 
 

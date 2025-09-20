@@ -39,7 +39,7 @@ public class ElderlyCareRagService {
     private final EmbeddingModel embeddingModel;
     private final EmbeddingStore<TextSegment> embeddingStore;
 
-    public ElderlyCareRagService(@Value("sk-ee83b6a7922840019fa88682f0961553") String apiKey) {
+    public ElderlyCareRagService(@Value("${dashscope.api.key}") String apiKey) {
 
         // ✅ 初始化流式聊天模型
         this.streamingChatModel = QwenStreamingChatModel.builder()

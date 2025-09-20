@@ -18,12 +18,13 @@
 
 2. 如何运行项目
 
-   0. 搭建好数据库环境，修改Java后端中application.yml内数据库的信息为自己本地的信息，仓库中完整数据库文件为CareCenter.sql；
+   1. 搭建好数据库环境，修改Java后端中application.yml内数据库的信息为自己本地的信息，仓库中完整数据库文件为CareCenter.sql；
 
    1. 打开本地的Redis客户端与nacos客户端，没有nacos的用户可以通过 [Nacos Quick Start | Nacos 官网](https://nacos.io/en/docs/next/quickstart/quick-start/?spm=5238cd80.cff869d.0.0.237f7e84WaDDJE) 进行下载安装，需要将8080-8090端口空闲以便项目展开；或者你也可以手动修改该项目中Gateway模块内application.yml文件中server.port项目修改gateway网关端口以空出8080端口；
 
    2. 依次运行项目中的全部子模块；
    3. 运行前端项目（见0. 写在前面），在浏览器中访问 127.0.0.1:80 即可通过前端查看项目。
+   4. 如果你需要使用AI聊天助手，请在aichat-service模块中application.yml文件内修改dashscope.ai.key为你自己的Qwen API key。
 
 3. 其他
 
