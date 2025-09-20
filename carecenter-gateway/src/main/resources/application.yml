@@ -1,0 +1,71 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: carecenter-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: aichat-service
+          uri: lb://aichat-service
+          predicates:
+            - Path=/ai/**
+
+        - id: lifereminder-service
+          uri: lb://lifereminder-service
+          predicates:
+            - Path=/lifereminder/**
+
+        - id: bedroom-service
+          uri: lb://bedroom-service
+          predicates:
+            - Path=/bedroom/**
+
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+
+        - id: sysresource-service
+          uri: lb://sysresource-service
+          predicates:
+            - Path=/sysResource/**
+
+        - id: role-service
+          uri: lb://role-service
+          predicates:
+            - Path=/role/**, /roleResource/**
+
+        - id: other-service
+          uri: lb://other-service
+          predicates:
+            - Path=/**
+
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOriginPatterns: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+      config:
+        username: nacos  # 需要同时配置config的认证
+        password: nacos
+  main:
+    web-application-type: reactive
+
+logging:
+  level:
+    com.edu.gateway: Debug

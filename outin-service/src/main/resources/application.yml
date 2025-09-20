@@ -1,0 +1,53 @@
+# outin-service
+server:
+  port: 8083
+spring:
+  cloud:
+      nacos:
+          discovery:
+              server-addr: 127.0.0.1:8848
+              username: nacos
+              password: nacos
+          config:
+              username: nacos
+              password: nacos
+  application:
+    name: lifereminder-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/CareCenter?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 17
+      minimum-idle: 8
+      servlet:
+        multipart:
+          max-file-size: 5MB
+          max-request-size: 20MB
+      mail:
+        host: smtp.qq.com
+        port: 465
+        username: 844439287@qq.com
+        password: ygdqwhplngmxbegc
+        properties:
+          mail:
+            smtp:
+              ssl:
+                enable: true
+      data:
+        redis:
+          port: 6379
+          host: 127.0.0.1
+  mybatis-plus:
+    type-aliases-package: com.edu.common.entity
+  logging:
+    level:
+      com.edu.checkin: debug
+  minio:
+    config:
+      endpoint: http://127.0.0.1:9000
+      username: admin
+      password: 123456
+  knife4j:
+    enable: true

@@ -1,0 +1,21 @@
+dashscope:
+  api:
+    key: sk-ee83b6a7922840019fa88682f0961553
+server:
+  port: 8081
+
+spring:
+  mvc:
+    cors:
+      enabled: false
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+      config:
+        username: nacos  # 需要同时配置config的认证
+        password: nacos
+  application:
+    name: aichat-service
