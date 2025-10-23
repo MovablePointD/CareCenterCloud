@@ -2,7 +2,7 @@
 
 0. 写在前面：
 
-​    这是一个将spring boot项目转变为spring cloud项目的远程代码储存仓库，仅仅包含后端部分，前端项目详见[MovablePointD/SpringBoot-2-S.Cloud-VUE](https://github.com/MovablePointD/SpringBoot-2-S.Cloud-VUE)。代码包含了所有后端代码，但运行时需要进行提前配置。代码为本地环境，仅供学习参考使用。
+​    这是一个将spring boot项目转变为spring cloud项目的远程代码储存仓库，仅仅包含后端部分，前端项目详见[MovablePointD/CareCenterCloudVue](https://github.com/MovablePointD/CareCenterCloudVue)。代码包含了所有后端代码，但运行时需要进行提前配置。代码为本地环境，仅供学习参考使用。
 
 1. 环境需求：
 
