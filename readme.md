@@ -28,7 +28,7 @@
 
 3. 其他
 
-​    如果你不想用这个spring cloud项目，只是想要使用boot项目，那么你可以参考 [XiaoHu22213/RongXiaoTong: 融消通农产品销售平台](https://github.com/XiaoHu22213/RongXiaoTong) 来学习Spring boot相关内容，这是我参与的另一个Spring boot架构的Java学习项目。
+​    如果你不想用这个spring cloud项目，只是想要使用boot项目，那么你可以参考 [MovablePointD/RongXiaoTong: 融消通农产品销售平台](https://github.com/MovablePointD/RongXiaoTong) 来学习Spring boot相关内容，这是我参与的另一个Spring boot架构的Java学习项目。
 
 ​    如果你想尝试将这个项目变为boot项目，那么你首先需要了解什么是Openfeign，来消除所有模块间调用的client类文件，并使用对应的service文件进行代替（用到其他模块的controller类文件中import部分打注释的内容），然后直接启动模块即可。
 
